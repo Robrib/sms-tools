@@ -1,5 +1,5 @@
 import numpy as np
-
+import A2Part3
 """
 A2-Part-5: Compute the magnitude spectrum (Optional)
 
@@ -22,3 +22,5 @@ def genMagSpec(x):
                              (length N)
     """
     ## Your code here
+    magX = np.abs(A2Part3.DFT(x))
+    return magX
